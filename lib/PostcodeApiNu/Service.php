@@ -6,7 +6,7 @@ use Buzz\Client\FileGetContents;
 use Buzz\Client\ClientInterface;
 
 
-class Service
+class Service implements ServiceInterface
 {
     /**
      * @var \PostcodeApiNu\Client
@@ -52,3 +52,4 @@ class Service
         return $response->getData()->resource;
     }
 }
+
